@@ -1,0 +1,39 @@
+$maincolor: #222222;
+$textOnDark: #cecece;
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: $maincolor;
+    position: fixed;
+    z-index: 3;
+
+    .inner {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            width: 10%;
+            height: inherit;
+            background-image: url('../../Assets//PG\ LOGO\ NO\ BACKGROUND.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .links {
+            width: 45%;
+            height: inherit;
+            // background-color: orange;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .nav_link {
+                color: $textOnDark;
+                text-decoration: none;
+            }
+        }
+    }
+}
